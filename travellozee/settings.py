@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'travellozee.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'travello_py',
+        'NAME': 'new_travello',
         'USER':'postgres',
         'PASSWORD':'password',
         'HOST':'localhost'
@@ -127,3 +127,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static'),
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'/media/')

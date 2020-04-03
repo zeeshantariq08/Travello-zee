@@ -7,6 +7,6 @@ class Destination(models.Model):
 	description = models.TextField()
 	price = models.IntegerField()
 	offer = models.BooleanField(default=False)
-	image_url = models.ImageField(upload_to='uploads')
+	img = models.ImageField(upload_to='pics')
 
 
